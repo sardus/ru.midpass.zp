@@ -9,7 +9,9 @@ public class StartPaige {
 
         System.setProperty("webdriver.chrome.driver", "C:\\WebDriver\\bin\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-        driver.get("https://selenium.dev");
+        driver.get("https://zp.midpass.ru");
+        String i = "Оформление заявлений о выдаче ПНП";
+        driver.getTitle().equals(i);
 
         driver.close();
     }
